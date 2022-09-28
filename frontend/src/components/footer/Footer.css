@@ -1,0 +1,153 @@
+.FooterContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #111;
+    padding: 50px 0px 0px 0px;
+    flex-direction: column;
+}
+
+.FooterContainer1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1500px;
+    flex-wrap: wrap;
+}
+
+.FooterLogo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 30%;
+    flex-direction: column;
+}
+
+.FooterLogo h1{
+    color: #0084E8;
+    font-size: 1.7rem;
+    margin: 0px 0px 30px 0px;
+}
+
+.FooterLogo p{
+    font-size: 1rem;
+    color: white;
+    line-height: 32px;
+    margin: 0px;
+}
+
+.FooterLinksDiv{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 20%;
+    flex-direction: column;
+}
+
+.FooterLinksDiv h1{
+    color: #0084E8;
+    font-size: 1.7rem;
+    margin: 0px 0px 20px 0px;
+}
+
+.FooterBotDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 70px;
+    padding: 3px 0px 3px 0px;
+    background-color: #0084E8;
+}
+
+.FooterLink{
+    color: white;
+    text-decoration: none;
+    font-size: 1.05rem;
+    margin: 0px 0px 20px 0px;
+}
+
+.FooterBotDiv p{
+    font-size: 1.05rem;
+    color: white;
+    line-height: 34px;
+}
+
+
+@media(max-width: 1650px){
+    .FooterContainer1{
+        width: 1200px;
+    }
+}
+
+@media(max-width: 1460px){
+    .FooterContainer1{
+        width: 1100px;
+    }
+}
+
+@media(max-width: 1235px){
+    .FooterContainer1{
+        width: 1000px;
+    }
+}
+
+@media(max-width: 1120px){
+    .FooterContainer1{
+        width: 850px;
+    }
+}
+
+@media(max-width: 960px){
+    .FooterContainer1{
+        width: 90%;
+    }
+
+    .FooterLogo{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .FooterBotDiv{
+        margin-top: 50px;
+    }
+
+    .FooterLinksDiv{
+        width: 50%;
+    }
+}
+
+@media(max-width: 530px){
+    .FooterLinksDiv{
+        width: 40%;
+    }
+
+    .FooterBotDiv p{
+        padding: 0px 10px;
+    }
+}
+
+@media(max-width: 400px){
+    .FooterLinksDiv{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .FooterBotDiv{
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .FooterLinksDiv{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .FooterLogo{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

@@ -1,0 +1,874 @@
+.HomeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.HomeWave{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1098%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c187 C 128%2c170 384%2c100 640%2c102 C 896%2c104 1024%2c204.6 1280%2c197 C 1536%2c189.4 1792%2c90.6 1920%2c64L1920 1080L0 1080z' fill='rgba(0%2c 153%2c 255%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c535 C 96%2c556.8 288%2c643.4 480%2c644 C 672%2c644.6 768%2c537.8 960%2c538 C 1152%2c538.2 1248%2c664 1440%2c645 C 1632%2c626 1824%2c483.4 1920%2c443L1920 1080L0 1080z' fill='rgba(0%2c 132%2c 232%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c916 C 128%2c899.8 384%2c836.4 640%2c835 C 896%2c833.6 1024%2c914.8 1280%2c909 C 1536%2c903.2 1792%2c826.6 1920%2c806L1920 1080L0 1080z' fill='rgba(0%2c 79%2c 170%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1098'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    transform: scaleY(-1);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.HomeHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1500px;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+.HomeHeaderLeft{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 45%;
+    flex-direction: column;
+}
+
+.HomeHeaderLeft h1{
+    color: white;
+    font-size: 4rem;
+    line-height: 80px;
+    margin: 0px 0px 10px 0px;
+}
+
+.HomeHeaderLeft{
+    color: rgb(246, 246, 246);
+    font-size: 1rem;
+    line-height: 32px;
+    margin: 0px;
+}
+
+.HomeHeaderLeftLink{
+    text-decoration: none;
+    text-align: center;
+    color: rgba(0, 132, 232, 1);
+    background-color: white;
+    padding: 12px 50px;
+    border-radius: 30px;
+    font-size: 1.05rem;
+    margin: 10px 0px 0px 0px;
+    font-weight: 500;
+}
+
+.HomeHeaderRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.HomeHeaderRightImg{
+    width: 100%;
+}
+
+.HomeInfoContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1500px;
+    margin-top: 60px;
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+
+.HomeInfoHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    flex-direction: column;
+    margin-bottom: 250px;
+}
+
+.HomeInfoHeader p{
+    margin: 0px 0px px 0px;
+    color:rgba(0, 132, 232, 1);
+    font-weight: 550;
+}
+
+.HomeInfoHeader h1{
+    text-align: center;
+    line-height: 50px;
+    color: #171717;
+    margin: 0px;
+}
+
+.HomeInfoMain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.HomeInfoMainDiv{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 400px;
+    flex-direction: column;
+    padding: 40px 0px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 17px -10px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 17px -10px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 17px -10px rgba(66, 68, 90, 1);
+}
+
+.HomeInfoMainIcon{
+    width: 120px;
+    margin: 0px 0px 50px 0px;
+}
+
+.HomeInfoMainH1{
+    font-size: 1.7rem;
+    color: #171717;
+    margin: 0px 0px 30px 0px;
+    line-height: 42px;
+    width: 90%;
+    text-align: center;
+}
+
+.HomeInfoMainP{
+    color: #171717;
+    margin: 0px 0px 50px 0px;
+    line-height: 32px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 85%;
+    text-align: center;
+}
+
+.HomeInfoMainLink{
+    text-decoration: none;
+    background-color: #0084E8;
+    color: white;
+    padding: 16px 42px;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+.HomeInfoMainDiv1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 400px;
+    flex-direction: column;
+    padding: 40px 0px;
+    transform: translateY(-100px) scale(1.1);
+    background-color: #0084E8;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 17px -10px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 17px -10px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 17px -10px rgba(66, 68, 90, 1);
+}
+
+.HomeInfoMainH11{
+    font-size: 1.7rem;
+    color: white;
+    margin: 0px 0px 30px 0px;
+    line-height: 42px;
+    width: 90%;
+    text-align: center;
+}
+
+.HomeInfoMainP1{
+    color: rgb(244, 244, 244);
+    margin: 0px 0px 50px 0px;
+    line-height: 32px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 85%;
+    text-align: center;
+}
+
+.HomeInfoMainLink1{
+    text-decoration: none;
+    background-color: white;
+    color: #0084E8;
+    padding: 16px 42px;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+.HomeInfoSTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.HomeInfoSTop:nth-child(2){
+    margin-bottom: 230px;
+}
+
+.HomeInfoSTopLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    position: relative;
+}
+
+.HomeInfoSTopLeftImg{
+    width: 100%;
+}
+
+.HomeInfoSTopLeftText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    flex-direction: column;
+    position: relative;
+}
+
+.HomeInfoSTopLeftText h1{
+    font-size: 2rem;
+    line-height: 40px;
+    margin: 0px;
+    color: #171717;
+}
+
+.HomeInfoSTopLeftText p{
+    font-size: 1rem;
+    line-height: 35px;
+    margin: 30px 0px 0px 0px;
+}
+
+.HomeInfoSTopLeftBlob{
+    position: absolute;
+    z-index: -1;
+    bottom: -175px;
+    width: 800px;
+}
+
+.HomeInfoHeader1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    flex-direction: column;
+    margin-bottom: 240px;
+}
+
+.HomeInfoHeader1 p{
+    margin: 0px 0px 15px 0px;
+    color:rgba(0, 132, 232, 1);
+    font-weight: 550;
+}
+
+.HomeInfoHeader1 h1{
+    text-align: center;
+    line-height: 50px;
+    color: #171717;
+    margin: 0px;
+}
+
+.HomeNewsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #0084E8;
+    margin: 130px 0px 100px 0px;
+}
+
+.HomeNewsletter1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1500px;
+    padding: 40px 0px;
+}
+
+.HomeNewsletterLeft{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 55%;
+    padding: 50px 0px;
+}
+
+.HomeNewsletterLeft h2{
+    color: white;
+    font-size: 2rem;
+    margin: 0px 0px 30px 0px;
+}
+
+.HomeNewsletterLeft p{
+    color: rgb(240, 240, 240);
+    font-size: 1rem;
+    margin: 0px;
+    line-height: 32px;
+}
+
+.HomeNewsletterRight{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.HomeNewsletterRightInp{
+    width: 500px;
+    box-sizing: border-box;
+    padding: 14px 25px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.HomeNewsletterRightBtn{
+    padding: 14px 90px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #EEE8A9;
+    color: #171717;
+    font-weight: 500;
+    margin: 20px 0px 0px 0px;
+    cursor: pointer;
+}
+
+.HomeFaqContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1300px;
+    flex-direction: column;
+}
+
+.HomeFaqDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #171717;
+    padding: 20px 0px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.HomeFaqTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.HomeFaqDiv h1{
+    line-height: 40px;
+    font-size: 1.3rem;
+    margin: 0px 0px 0px 25px;
+    color: #171717;
+}
+
+.HomeFaqDiv h1 span{
+    color: #0084E8;
+    margin-right: 5px;
+}
+
+.HomeFaqDivImg{
+    width: 55px;
+    margin: 0px 25px 0px 30px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.HomeFaqDivP{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.HomeFaqDivP p{
+    padding: 20px 80px 20px 20px;
+    line-height: 32px;
+    margin: 0px;
+}
+
+.HomeInfoHeader2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.HomeInfoHeader2 p{
+    margin: 0px 0px 15px 0px;
+    color:rgba(0, 132, 232, 1);
+    font-weight: 550;
+}
+
+.HomeInfoHeader2 h1{
+    text-align: center;
+    line-height: 50px;
+    color: #171717;
+    margin: 0px;
+}
+
+@keyframes growDown {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+        visibility: visible;
+    }
+}
+
+@keyframes growUp {
+    0% {
+        visibility: hidden;
+        opacity: 0.5;
+        transform: translateY(0px)
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-15px);
+        height: 0px;
+        visibility: visible;
+    }
+}
+
+@media(max-width: 1710px){
+    .HomeHeader{
+        width: 1300px;
+    }
+
+    .HomeInfoContainer{
+        width: 1300px;
+    }
+
+    .HomeNewsletter1{
+        width: 1300px;
+    }
+
+    .HomeInfoMainDiv{
+        width: 390px;
+    }
+
+    .HomeInfoMainDiv1{
+        transform: translateY(-100px) scale(1.05);
+        width: 390px;
+    }
+
+    .HomeInfoSTopLeftBlob{
+        width: 130%;
+    }
+}
+
+@media(max-width: 1460px){
+    .HomeHeader{
+        width: 1100px;
+    }
+
+    .HomeInfoContainer{
+        width: 1100px;
+    }
+
+    .HomeNewsletter1{
+        width: 1100px;
+    }
+
+    .HomeInfoMainDiv{
+        width: 320px;
+    }
+
+    .HomeInfoMainDiv1{
+        transform: translateY(-100px) scale(1.05);
+        width: 320px;
+    }
+
+    .HomeFaqContainer{
+        width: 1100px;
+    }
+
+    .HomeNewsletterLeft{
+        width: 55%;
+    }
+
+    .HomeNewsletterRightInp{
+        width: 400px;
+    }
+
+    .HomeInfoMainH1{
+        width: 80%;
+        font-size: 1.5rem;
+        line-height: 35px;
+    }
+
+    .HomeInfoMainP{
+        width: 80%;
+    }
+
+    .HomeInfoMainH11{
+        width: 80%;
+        font-size: 1.5rem;
+        line-height: 35px;
+    }
+
+    .HomeInfoMainP1{
+        width: 80%;
+    }
+}
+
+@media(max-width: 1235px){
+    .HomeHeader{
+        width: 1000px;
+    }
+
+    .HomeInfoContainer{
+        width: 1000px;
+    }
+
+    .HomeNewsletter1{
+        width: 1000px;
+    }
+
+    .HomeFaqContainer{
+        width: 1000px;
+    }
+
+    .HomeInfoMainDiv{
+        width: 300px;
+    }
+
+    .HomeInfoMainDiv1{
+        transform: translateY(-100px) scale(1.05);
+        width: 300px;
+    }
+
+    .HomeInfoMainP{
+        -webkit-line-clamp: 3;
+    }
+
+    .HomeInfoMainP1{
+        -webkit-line-clamp: 3;
+    }
+}
+
+@media(max-width: 1120px){
+    .HomeHeader{
+        width: 850px;
+    }
+
+    .HomeInfoContainer{
+        width: 850px;
+    }
+
+    .HomeNewsletter1{
+        width: 850px;
+    }
+
+    .HomeFaqContainer{
+        width: 850px;
+    }
+
+    .HomeInfoMainH1{
+        width: 85%;
+    }
+
+    .HomeInfoMainP{
+        width: 85%;
+    }
+
+    .HomeInfoMainH11{
+        width: 85%;
+    }
+
+    .HomeInfoMainP1{
+        width: 85%;
+    }
+
+    .HomeHeaderLeft{
+        width: 55%;
+    }
+
+    .HomeHeaderRight{
+        width: 35%;
+    }
+
+    .HomeHeaderRightImg{
+        width: 100%;
+    }
+
+    .HomeNewsletterRightInp{
+        width: 330px;
+    }
+
+    .HomeNewsletterLeft p{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media(max-width: 960px){
+    .HomeNewsletter{
+        padding: 0px 0px;
+    }
+
+    .HomeHeaderRight{
+        display: none;
+    }
+
+    .HomeNewsletterLeft{
+        width: 100%;
+        padding: 0px 0px 40px 0px;
+    }
+
+    .HomeHeader{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    .HomeHeaderLeft{
+        width: 90%;
+    }
+
+    .HomeInfoMain{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .HomeInfoMainDiv{
+        width: 90%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 50px;
+        padding: 50px 0px;
+    }
+
+    .HomeInfoMainDiv1{
+        width: 90%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        transform: translateY(0px) scale(1);
+        margin-top: 50px;
+        padding: 50px 0px;
+    }
+
+    .HomeInfoMainP{
+        -webkit-line-clamp: 4;
+    }
+
+    .HomeInfoMainP1{
+        -webkit-line-clamp: 4;
+    }
+
+    .HomeInfoMainH1{
+        width: 100%;
+    }
+
+    .HomeInfoHeader{
+        margin-bottom: 60px;
+    }
+
+    .HomeInfoMainIcon{
+        width: 130px;
+    }
+
+    .HomeInfoContainer{
+        margin-bottom: 80px;
+        width: 100%;
+    }
+
+    .HomeInfoSTop{
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+        width: 90%;
+    }
+
+    .HomeInfoSTopLeft{
+        margin-bottom: 170px;
+        width: 50%;
+    }
+
+    .HomeInfoSTopLeftText{
+        margin: 0px;
+        padding: 0px;
+        width: 90%;
+    }
+
+    .HomeInfoHeader1{
+        margin-bottom: 130px;
+        width: 90%;
+    }
+
+    .HomeInfoHeader{
+        margin-bottom: 130px;
+        width: 90%;
+    }
+
+    .HomeInfoHeader2{
+        margin-bottom: 130px;
+        width: 90%;
+    }
+
+    .HomeInfoSTop:last-child{
+        flex-direction: column-reverse;
+        margin-top: -70px;
+    }
+
+    .HomeNewsletter1{
+        width: 90%;
+        flex-wrap: wrap;
+        padding: 70px 0px;
+    }
+
+    .HomeFaqContainer{
+        width: 90%;
+    }
+
+    .HomeFaqDiv{
+        width: 100%;
+    }
+
+    .HomeNewsletterRightInp{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .HomeNewsletterRight{
+        width: 300px;
+    }
+
+    .HomeNewsletterRightBtn{
+        width: 100%;
+        padding: 15px 0px;
+    }
+}
+
+@media(max-width: 700px){
+    .HomeWave{
+        height: 850px;
+    }
+
+    .HomeHeader{
+        height: 750px;
+    }
+
+    .HomeHeaderLeft h1{
+        font-size: 3rem;
+        line-height: 65px;
+    }
+
+    .HomeInfoHeader{
+        margin-bottom: 50px;
+    }
+
+    .HomeInfoHeader h1{
+        font-size: 1.5rem;
+        line-height: 43px;
+    }
+
+    .HomeInfoHeader1 h1{
+        font-size: 1.5rem;
+        line-height: 43px;
+    }
+
+    .HomeInfoHeader2 h1{
+        font-size: 1.5rem;
+        line-height: 43px;
+    }
+
+    .HomeFaqTop h1{
+        font-size: 1.1rem;
+        line-height: 35px;
+    }
+
+    .HomeInfoSTopLeftText h1{
+        font-size: 1.3rem;
+        line-height: 37px;
+    }
+
+    .HomeNewsletter1{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .HomeNewsletterLeft{
+        text-align: center;
+    }
+
+    .HomeInfoContainer{
+        margin-bottom: 50px;
+    }
+
+    .HomeInfoHeader1{
+        margin-bottom: 100px;
+    }
+
+    .HomeInfoSTop:last-child{
+        margin-top: -120px;
+    }
+
+    .HomeNewsletter{
+        margin: 30px 0px 20px 0px;
+    }
+
+    .HomeInfoHeader2{
+        margin-bottom: 80px;
+    }
+
+    .HomeFaqTop{
+        flex-direction: column;
+    }
+
+    .HomeFaqTop h1{
+        margin: 0px 25px 20px 25px;
+    }
+
+    .HomeFaqDivP{
+        padding: 0px 25px 20px 25px;
+        width: 100%;
+    }
+
+    .HomeFaqDivImg{
+        margin: 0px 0px -20px 0px;
+        padding: 0px;
+    }
+
+    .HomeFaqDivP p{
+        padding: 0px;
+        width: 100%;
+        margin: 50px 0px 0px 0px;
+    }
+}
