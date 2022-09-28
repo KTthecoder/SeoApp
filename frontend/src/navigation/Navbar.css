@@ -1,4 +1,4 @@
-.NavbarContainer{
+/* .NavbarContainer{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 30%;
+    width: 20%;
 }
 
 .NavbarLeft h1{
@@ -31,7 +31,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 60%;
+    width: 70%;
 }
 
 .NavbarRightLink{
@@ -50,4 +50,222 @@
     font-size: 1rem;
     font-weight: 500;
     margin-left: 60px;
+}
+
+@media(max-width: 1600px){
+    .NavbarContainer1{
+        width: 90%;
+    }
+}
+
+@media(max-width: ) */
+
+.NavbarContainer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.NavbarContainer1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 80px;
+}
+
+.NavbarLogoDiv{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 20%;
+}
+
+.NavbarLogoDiv h1{
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.NavbarMenuDiv{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70%;
+}
+
+.NavbarMenuLink{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    border-bottom: 1px solid transparent;
+    padding: 3px 0px;
+    transition: all .15s ease-in-out;
+    margin-left: 60px;
+}
+
+.NavbarMenuLink1{
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    color: rgba(0, 79, 170, 1);
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 60px;
+}
+
+.NavbarMenuBtnDiv{
+    display: none;
+}
+
+.NavbarMenuDiv1{
+    display: none;
+}
+
+.NavbarMenuBtn1{
+    display: flex;
+    width: 25px;
+}
+
+.none{
+    display: none;
+}
+
+@media(min-width: 1200px){
+    .NavbarMenuLink2:hover{
+        border-bottom: 1px solid white;
+        transition: all .15s ease-in-out;
+    }
+
+    .NavbarMenuLink:hover{
+        border-bottom: 1px solid white;
+        transition: all .15s ease-in-out;
+    }
+}
+
+@media(min-width: 1150px){
+    .NavbarLogoDiv1{
+        display: none;
+    }
+
+    .NavbarMenuDiv2{
+        display: none;
+    }
+}
+
+@media(max-width: 1150px){
+    .NavbarMenuBtnDiv{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 35px;
+    }
+
+    .NavbarMenuBtn{
+        width: 100%;
+        z-index: 1;
+    }
+
+    .NavbarMenuDiv{
+        display: none;
+    }
+
+    .NavbarMenuDiv1{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 300px;
+        background-color: #222;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .NavbarLogoDiv1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgb(37, 37, 37);
+    }
+    
+    .NavbarMenuDiv2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .NavbarLogoDiv1 h1{
+        font-size: 1.5rem;
+        color: white;
+        width: 70%;
+        cursor: pointer;
+    }
+
+    .NavbarMenuLink2{
+        text-decoration: none;
+        color: white;
+        font-size: 1.1rem;
+        border-bottom: 1px solid transparent;
+        padding: 15px 0px;
+        width: 78%;
+        transition: all .15s ease-in-out;
+    }
+    
+    
+}
+
+@media(max-width: 580px){
+    .NavbarMenuDiv1{
+        width: 100%;
+        z-index: 1;
+    }
+
+    .NavbarLogoDiv1{
+        width: 90%;
+        justify-content: space-between;
+        border: none;
+        margin: 0px;
+    }
+
+    .NavbarLogoDiv1 h1{
+        width: 100px;
+    }
+
+    .NavbarMenuDiv2{
+        width: 100%;
+        align-items: center;
+        border-top: 1px solid #222;
+        padding-top: 20px;
+    }
+
+    .NavbarMenuLink2{
+        width: 90%;
+    }
+
+    .NavbarMenuBtn{
+        display: none;
+    }
+}
+
+@media(max-width: 460px){
+    .NavbarLogoDiv1{
+        width: 80%;
+    }
+
+    .NavbarMenuLink2{
+        width: 80%;
+    }
 }

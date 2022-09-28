@@ -8,7 +8,7 @@ function App() {
   return (
     <BrowserRouter>
       <nav>
-        {/* <Navbar/> */}
+        <Navbar/>
       </nav>
       <main>
         <Navigation/>
