@@ -10,6 +10,7 @@ import SeoIcon from '../../static/icons/seo.png'
 import WriterIcon from '../../static/icons/writer.png'
 import SocialsIcon from '../../static/icons/socials.png'
 import ArrowDown from '../../static/icons/down.png'
+import { useInView } from 'react-intersection-observer';
 
 const HomePage = () => {
     const [faqS1, setFaqS1] = useState(true)
@@ -19,6 +20,8 @@ const HomePage = () => {
     const [faqS5, setFaqS5] = useState(false)
     const [faqS6, setFaqS6] = useState(false)
     const [faqS7, setFaqS7] = useState(false)
+
+    const { ref, inView, entry } = useInView();
 
     const FaqToggle1 = (value) => {
         if (value === false){
@@ -118,8 +121,8 @@ const HomePage = () => {
             </div>
             <div className='HomeInfoContainer'>
                 <div className='HomeInfoHeader1'>
-                    <p>Some Information About Us</p>
-                    <h1>Mauris hendrerit maximus mi quis sodales. In sollicitudin at turpis eu semper.</h1>
+                    <p ref={ref}>Some Information About Us</p>
+                    <h1 style={inView ? {display: 'flex'} : {display: 'none'}}>Mauris hendrerit maximus mi quis sodales. In sollicitudin at turpis eu semper.</h1>
                 </div>
                 <div className='HomeInfoSTop'>
                     <div className='HomeInfoSTopLeft'>
