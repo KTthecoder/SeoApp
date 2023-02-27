@@ -4,6 +4,7 @@
     align-items: center;
     width: 100%;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .HomeWave{
@@ -392,7 +393,7 @@
     width: 55px;
     margin: 0px 25px 0px 30px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 0;
 }
 
 .HomeFaqDivP{
@@ -460,6 +461,13 @@
     }
 }
 
+@media(min-width: 1120px){
+    .HomeInfoMainDiv1{
+        position: relative;
+        top: -80px;
+    }
+}
+
 @media(max-width: 1710px){
     .HomeHeader{
         width: 1300px;
@@ -478,7 +486,7 @@
     }
 
     .HomeInfoMainDiv1{
-        transform: translateY(-100px) scale(1.05);
+        /* transform: translateY(-100px) scale(1.05); */
         width: 390px;
     }
 
@@ -505,7 +513,7 @@
     }
 
     .HomeInfoMainDiv1{
-        transform: translateY(-100px) scale(1.05);
+        /* transform: translateY(-100px) scale(1.05); */
         width: 320px;
     }
 
@@ -564,7 +572,7 @@
     }
 
     .HomeInfoMainDiv1{
-        transform: translateY(-100px) scale(1.05);
+        /* transform: translateY(-100px) scale(1.05); */
         width: 300px;
     }
 
@@ -679,7 +687,8 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        transform: translateY(0px) scale(1);
+        /* transform: translateY(0px) scale(1);
+        margin-top: 0px; */
         margin-top: 50px;
         padding: 50px 0px;
     }
@@ -843,6 +852,7 @@
 
     .HomeInfoContainer{
         margin-bottom: 50px;
+        width: 100%;
     }
 
     .HomeInfoHeader1{

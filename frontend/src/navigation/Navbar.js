@@ -3,9 +3,25 @@ import './Navbar.css'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import menuIcon from '../static/icons/menu.png'
 import closeIcon from '../static/icons/close.png'
+import { motion } from 'framer-motion'
+
+const navbarVariants = {
+    hidden: {
+        y: '-80px', opacity: 0,
+        transition: {
+            type: 'spring', stiffness: 100, duration: 0.1
+        }
+    },
+    visible: {
+        y: 0, opacity: 1,
+        transition: {
+            type: 'spring', stiffness: 100, duration: 0.1
+        }
+    }
+}
 
 const Navbar = () => {
-  const [show, setShow] = useState(false)
+    const [show, setShow] = useState(false)
     const [show1, setShow1] = useState(true)
 
     const location = useLocation()
@@ -18,21 +34,7 @@ const Navbar = () => {
     }, [location])
 
     return (
-      // <div className='NavbarContainer'>
-      //     <div className='NavbarContainer1'>
-      //         <div className='NavbarLeft'>
-      //             <h1>YourLogo</h1>
-      //         </div>
-      //         <div className='NavbarRight'>
-      //             <Link to='/' className='NavbarRightLink'>Home</Link>
-      //             <Link to='/' className='NavbarRightLink'>About Us</Link>
-      //             <Link to='/' className='NavbarRightLink'>Offer</Link>
-      //             <Link to='/' className='NavbarRightLink'>Contact</Link>
-      //             <Link to='/' className='NavbarRightLink1'>Buy Now</Link>
-      //         </div>
-      //     </div>
-      // </div>
-      <div className='NavbarContainer'>
+        <motion.div className='NavbarContainer' variants={navbarVariants} initial='hidden' animate='visible'>
             <div className='NavbarContainer1'>
                 <div className='NavbarLogoDiv'>
                     <h1 onClick={() => navigate("/")}>InterArt</h1>
@@ -62,7 +64,7 @@ const Navbar = () => {
                     <Link to='/contact' className='NavbarMenuLink2'>Contact</Link>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
