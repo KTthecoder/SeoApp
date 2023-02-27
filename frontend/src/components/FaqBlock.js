@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import ArrowDown from '../static/icons/down.png'
-import { motion, useAnimation } from 'framer-motion'
-import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion'
 
 const FaqBlock = ({nr, title, body}) => {
     const [faq, setFaq] = useState(false)

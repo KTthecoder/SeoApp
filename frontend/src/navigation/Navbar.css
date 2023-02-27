@@ -1,66 +1,23 @@
-/* .NavbarContainer{
+.NavbarContainer{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    top: 0;
+    z-index: 2;
 }
 
-.NavbarContainer1{
+.NavbarContainerBig{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1500px;
-    height: 80px;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    background-color: transparent;
+    transition: all 0.5s ease-in-out;
 }
 
-.NavbarLeft{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 20%;
-}
-
-.NavbarLeft h1{
-    color: white;
-    font-size: 1.5rem;
-}
-
-.NavbarRight{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 70%;
-}
-
-.NavbarRightLink{
-    margin-left: 60px;
-    text-decoration: none;
-    color: white;
-}
-
-.NavbarRightLink1{
-    background-color: white;
-    text-decoration: none;
-    text-align: center;
-    color: rgba(0, 79, 170, 1);
-    padding: 12px 30px;
-    border-radius: 30px;
-    font-size: 1rem;
-    font-weight: 500;
-    margin-left: 60px;
-}
-
-@media(max-width: 1600px){
-    .NavbarContainer1{
-        width: 90%;
-    }
-}
-
-@media(max-width: ) */
-
-.NavbarContainer{
+.NavbarContainerShow{
     display: flex;
     justify-content: center;
     align-content: center;
@@ -68,7 +25,9 @@
     background-color: transparent;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 2;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
 }
 
 .NavbarContainer1{
@@ -90,6 +49,7 @@
     font-size: 1.5rem;
     color: white;
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
 }
 
 .NavbarMenuDiv{
@@ -107,6 +67,7 @@
     padding: 3px 0px;
     transition: all .15s ease-in-out;
     margin-left: 60px;
+    transition: all 0.5s ease-in-out;
 }
 
 .NavbarMenuLink1{
@@ -119,6 +80,7 @@
     font-size: 1rem;
     font-weight: 500;
     margin-left: 60px;
+    transition: all 0.5s ease-in-out;
 }
 
 .NavbarMenuBtnDiv{
