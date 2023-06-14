@@ -19,7 +19,7 @@ const FaqBlock = ({nr, title, body}) => {
         visible: {
             opacity: 1, scale: 1,
             transition: {
-                duration: 0.8,
+                duration: 1.4,
                 type: 'spring',
                 stiffness: 100,
                 delay: 0.4

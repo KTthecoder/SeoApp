@@ -18,7 +18,7 @@ const HomePage = () => {
         visible: {
             x: 0, opacity: 1,
             transition: {
-                duration: 0.6,
+                duration: 0.8,
                 type: 'spring',
                 stiffness: 80,
                 delay: 0.2
@@ -31,7 +31,7 @@ const HomePage = () => {
         visible: {
             x: 0, opacity: 1,
             transition: {
-                duration: 0.6,
+                duration: 0.8,
                 type: 'spring',
                 stiffness: 80,
                 delay: 0.4
@@ -44,7 +44,7 @@ const HomePage = () => {
         visible: {
             opacity: 1, x: 0,
             transition: {
-                duration: 0.6,
+                duration: 0.8,
                 type: 'spring',
                 stiffness: 80,
                 delay: 0.8
@@ -70,7 +70,7 @@ const HomePage = () => {
         visible: {
             opacity: 1, scale: 1,
             transition: {
-                duration: 0.8,
+                duration: 1.4,
                 type: 'spring',
                 stiffness: 100,
                 delay: 0.3
@@ -83,7 +83,7 @@ const HomePage = () => {
         visible: {
             opacity: 1, scale: 1,
             transition: {
-                duration: 1.2,
+                duration: 2,
                 type: 'spring',
                 stiffness: 120,
                 delay: 0.5
@@ -96,7 +96,7 @@ const HomePage = () => {
         visible: {
             y: 0, opacity: 1,
             transition: {
-                duration: 1.5,
+                duration: 3,
                 type: 'spring',
                 stiffness: 180,
                 delay: 0.4
@@ -109,7 +109,7 @@ const HomePage = () => {
         visible: {
             y: 0, opacity: 1,
             transition: {
-                duration: 1.5,
+                duration: 3,
                 type: 'spring',
                 stiffness: 180,
                 delay: 0.2
@@ -122,7 +122,7 @@ const HomePage = () => {
         visible: {
             y: 0, opacity: 1,
             transition: {
-                duration: 1.5,
+                duration: 3,
                 type: 'spring',
                 stiffness: 180,
                 delay: 0.6
@@ -135,7 +135,7 @@ const HomePage = () => {
         visible: {
             opacity: 1, scale: 1,
             transition: {
-                duration: 1.2,
+                duration: 1.4,
                 type: 'spring',
                 stiffness: 120,
                 delay: 0.2
@@ -148,7 +148,7 @@ const HomePage = () => {
         visible: {
             scale: 1, opacity: 1,
             transition: {
-                duration: 1.2,
+                duration: 3,
                 type: 'spring',
                 stiffness: 120,
                 delay: 0.4
@@ -161,7 +161,7 @@ const HomePage = () => {
         visible: {
             scale: 1, opacity: 1,
             transition: {
-                duration: 1.2,
+                duration: 1.8,
                 type: 'spring',
                 stiffness: 120,
                 delay: 0.8
@@ -174,7 +174,7 @@ const HomePage = () => {
         visible: {
             scale: 1, opacity: 1,
             transition: {
-                duration: 1.2,
+                duration: 1.6,
                 type: 'spring',
                 stiffness: 120,
                 delay: 0.4
@@ -187,7 +187,7 @@ const HomePage = () => {
         visible: {
             x: 0, opacity: 1,
             transition: {
-                duration: 0.6,
+                duration: 1,
                 type: 'spring',
                 stiffness: 80,
                 delay: 0.4
@@ -200,7 +200,7 @@ const HomePage = () => {
         visible: {
             x: 0, opacity: 1,
             transition: {
-                duration: 0.6,
+                duration: 1.8,
                 type: 'spring',
                 stiffness: 80,
                 delay: 0.3
@@ -213,7 +213,7 @@ const HomePage = () => {
         visible: {
             opacity: 1, scale: 1,
             transition: {
-                duration: 1.2,
+                duration: 1.6,
                 type: 'spring',
                 stiffness: 120,
                 delay: 0.8
@@ -226,7 +226,7 @@ const HomePage = () => {
         visible: {
             scale: 1, opacity: 1,
             transition: {
-                duration: 1.2,
+                duration: 1.6,
                 type: 'spring',
                 stiffness: 120,
                 delay: 0.4
@@ -265,7 +265,7 @@ const HomePage = () => {
         visible: {
             opacity: 1, scale: 1,
             transition: {
-                duration: 1.2,
+                duration: 1.4,
                 type: 'spring',
                 stiffness: 120,
                 delay: 0.4
@@ -278,7 +278,7 @@ const HomePage = () => {
         visible: {
             scale: 1, opacity: 1,
             transition: {
-                duration: 1.2,
+                duration: 3,
                 type: 'spring',
                 stiffness: 120,
                 delay: 0.6

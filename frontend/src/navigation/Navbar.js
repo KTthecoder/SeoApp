@@ -3,19 +3,20 @@ import './Navbar.css'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import menuIcon from '../static/icons/menu.png'
 import closeIcon from '../static/icons/close.png'
+import menuBIcon from '../static/icons/menuB.png'
 import { motion } from 'framer-motion'
 
 const navbarVariants = {
     hidden: {
         y: '-80px', opacity: 0,
         transition: {
-            type: 'spring', stiffness: 100, duration: 0.1
+            type: 'spring', stiffness: 100, duration: 0.3
         }
     },
     visible: {
         y: 0, opacity: 1,
         transition: {
-            type: 'spring', stiffness: 100, duration: 0.1
+            type: 'spring', stiffness: 100, duration: 0.3
         }
     }
 }
@@ -60,7 +61,7 @@ const Navbar = () => {
                                 <Link to='/' className='NavbarMenuLink1' style={{backgroundColor: 'rgba(0, 132, 232, 1)', color: 'white'}}>Buy Now</Link>
                             </div>
                             <div className='NavbarMenuBtnDiv'>
-                                <img src={menuIcon} className='NavbarMenuBtn' onClick={() => setShow(true)} style={show1 ? {display: 'flex'} : {display: 'none'}}/>
+                                <img src={menuBIcon} className='NavbarMenuBtn' onClick={() => setShow(true)} style={show1 ? {display: 'flex'} : {display: 'none'}}/>
                                 {/* <a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons created by SeyfDesigner - Flaticon</a> */}
                             </div>
                         </div>
@@ -71,7 +72,6 @@ const Navbar = () => {
                             </div>
                             <div className='NavbarMenuDiv2'>
                                 <Link to='/about-us' className='NavbarMenuLink2'>About Us</Link>
-                                {/* <Link to='/offer' className='NavbarMenuLink2'>Offer</Link> */}
                                 <Link to='/portfolio' className='NavbarMenuLink2'>Portfolio</Link>
                                 <Link to='/faq' className='NavbarMenuLink2'>Faq</Link>
                                 <Link to='/contact' className='NavbarMenuLink2'>Contact</Link>
@@ -105,7 +105,6 @@ const Navbar = () => {
                             </div>
                             <div className='NavbarMenuDiv2'>
                                 <Link to='/about-us' className='NavbarMenuLink2'>About Us</Link>
-                                {/* <Link to='/offer' className='NavbarMenuLink2'>Offer</Link> */}
                                 <Link to='/portfolio' className='NavbarMenuLink2'>Portfolio</Link>
                                 <Link to='/faq' className='NavbarMenuLink2'>Faq</Link>
                                 <Link to='/contact' className='NavbarMenuLink2'>Contact</Link>

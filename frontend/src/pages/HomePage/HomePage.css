@@ -486,7 +486,6 @@
     }
 
     .HomeInfoMainDiv1{
-        /* transform: translateY(-100px) scale(1.05); */
         width: 390px;
     }
 
@@ -513,7 +512,6 @@
     }
 
     .HomeInfoMainDiv1{
-        /* transform: translateY(-100px) scale(1.05); */
         width: 320px;
     }
 
@@ -572,7 +570,6 @@
     }
 
     .HomeInfoMainDiv1{
-        /* transform: translateY(-100px) scale(1.05); */
         width: 300px;
     }
 
@@ -687,8 +684,6 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        /* transform: translateY(0px) scale(1);
-        margin-top: 0px; */
         margin-top: 50px;
         padding: 50px 0px;
     }
